@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Book List</title>
+</head>
+
+<body>
+<h1 style="background-color: aliceblue;text-align: center">My First Website</h1>
+
+<div>
+    {% for book in books %}
+        Name : <a href="{% url 'book_detail' book.id %}">{{ book.title }}</a> <br>
+        Author : {{ book.author }}<br>
+
+        <hr>
+    {% endfor %}
+</div>
+</ul>
+</body>
+
+</html>

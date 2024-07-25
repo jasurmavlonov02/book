@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Detail</title>
+</head>
+
+<body>
+<h1>Welcome to detail page</h1>
+<hr>
+
+Name : {{ book.title }} <br>
+Author : {{ book.author }}<br>
+Quantity : {{ book.quantity }}<br>
+Description : {{ book.description }}<br>
+Published At : {{ book.published_at }}<br>
+
+<h3><a href="{% url 'book_list' %}">returned book list</a></h3>
+</body>
+</html>
